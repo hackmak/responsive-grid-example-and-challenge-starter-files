@@ -1,3 +1,5 @@
+/* this stylesheet will contain the styling for our MAIN content (sets rules for the grid) */
+
 main {
   padding-top: 100px;
 }
@@ -12,19 +14,18 @@ main .row {
   padding-top: 30px;
 }
 
-.black {
-  background-color: black;
-  color: white;
-}
-
 .green {
   background-color: green;
 }
 
-.orange {
-  background-color: orange;
-}
-
 .blue {
   background-color: blue;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.red {
+  background-color: red;
 }

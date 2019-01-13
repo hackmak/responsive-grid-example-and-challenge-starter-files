@@ -24,11 +24,13 @@
 /* Clearfix */
 .row::before,
 .row::after {
+  /* forces the height of each row to expand to the height of the tallest child element, aka rows will vertically contain all content */
   display: table;
   content: '';
 }
 
 .row::after {
+  /* ensures that any contant after the row will act as though the previous row was in the "normal flow" & won't hit the top of the row container */
   clear: both;
 }
 
@@ -45,7 +47,7 @@
   padding-right: 1.04166666%;
 }
 
-/* Mobile defaults */
+/* Mobile defaults - columns will take 100% of their parents' width -> stacking on narrower viewports */
 .col-3, .col-4, .col-6, .col-12 {
   width: 100%;
 }
@@ -60,14 +62,16 @@
 
   /* 4 columns */
   .col-4 {
+    width: 33.33%;
   }
 
   /* 6 columns */
   .col-6 {
-
+    width: 50%;
   }
 
   /* 12 columns */
   .col-12 {
+    width: 100%;
   }
 }
